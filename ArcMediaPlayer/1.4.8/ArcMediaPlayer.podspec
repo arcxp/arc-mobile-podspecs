@@ -26,14 +26,14 @@ Pod::Spec.new do |spec|
   spec.cocoapods_version   = '>= 1.7.0'
 
   # Deployment Targets
-  spec.platforms = { :ios => "11.0", :tvos => "11.0" }
-  spec.ios.deployment_target = 11.0
-  spec.tvos.deployment_target = 11.0
+  spec.platforms = { :ios => "13.0", :tvos => "13.0" }
+  spec.ios.deployment_target = 13.0
+  spec.tvos.deployment_target = 13.0
 
-  spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64', 
-    'EXCLUDED_ARCHS[sdk=appletvsimulator*]' => 'arm64' }
-  spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64', 
-    'EXCLUDED_ARCHS[sdk=appletvsimulator*]' => 'arm64' }
+  # spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64', 
+  #  'EXCLUDED_ARCHS[sdk=appletvsimulator*]' => 'arm64' }
+  # spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64', 
+  #  'EXCLUDED_ARCHS[sdk=appletvsimulator*]' => 'arm64' }
 
   # The DESTINATION for the pod (or, in this case, the zipped files). Publishing the pod
   # does NOT zip the frameworks up and upload them to this location--you have to do that
