@@ -33,7 +33,7 @@ Pod::Spec.new do |spec|
   # The DESTINATION for the pod (or, in this case, the zipped files). Publishing the pod
   # does NOT zip the frameworks up and upload them to this location--you have to do that
   # manually.
-  spec.source                  = { :http => "https://arc-mobile-sdks.s3.amazonaws.com/home/iosContentSDK/version_#{spec.version}/ArcXPContentSDK.zip" }
+  spec.source                  = { :http => "https://d3mh65msdilczf.cloudfront.net/home/iosContentSDK/version_#{spec.version}/ArcXPContentSDK.zip" }
 
   # The path the frameworks in the SOURCE .ZIP that are going into the pod.
   spec.ios.vendored_frameworks = ['ArcXPContentSDK.xcframework']
